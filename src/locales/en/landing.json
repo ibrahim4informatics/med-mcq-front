@@ -1,0 +1,31 @@
+{
+    "hero": {
+        "title": "Master Medical Exams with Confidence",
+        "subtitle": "Practice thousands of MCQs, simulate real exams, and track your progress like a pro medical student.",
+        "ctaPrimary": "Create a free account",
+        "ctaSecondary": "Explore advantages"
+    },
+    "advantages": {
+        "title": "Why Choose Our Platform?",
+        "targetedTraining": {
+            "title": "Targeted Practice",
+            "description": "Access thousands of MCQs organized by subject and difficulty level for a personalized learning experience."
+        },
+        "examSimulation": {
+            "title": "Realistic Exam Simulations",
+            "description": "Prepare effectively with mock exams that replicate real testing conditions and time constraints."
+        },
+        "progressTracking": {
+            "title": "Advanced Progress Tracking",
+            "description": "Monitor your performance, identify weak areas, and track your improvement over time."
+        },
+        "detailedExplanations": {
+            "title": "Detailed Explanations",
+            "description": "Learn from every question with clear explanations that help you understand the underlying concepts."
+        },
+        "questionBank": {
+            "title": "Extensive Question Bank",
+            "description": "Practice with a large collection of high-quality medical questions covering multiple specialties."
+        }
+    }
+}

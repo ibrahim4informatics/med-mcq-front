@@ -1,0 +1,31 @@
+{
+    "hero": {
+        "title": "Maîtrisez les examens médicaux avec confiance",
+        "subtitle": "Entraînez-vous avec des milliers de QCM, simulez de vrais examens et suivez vos progrès comme un étudiant en médecine professionnel.",
+        "ctaPrimary": "Créer un compte gratuit",
+        "ctaSecondary": "Explorer les avantages"
+    },
+    "advantages": {
+        "title": "Pourquoi choisir notre plateforme ?",
+        "targetedTraining": {
+            "title": "Entraînement ciblé",
+            "description": "Accédez à des milliers de QCM classés par matière et niveau de difficulté pour un apprentissage personnalisé."
+        },
+        "examSimulation": {
+            "title": "Simulations d'examens réalistes",
+            "description": "Préparez-vous efficacement grâce à des examens blancs reproduisant les conditions réelles et les contraintes de temps."
+        },
+        "progressTracking": {
+            "title": "Suivi de progression avancé",
+            "description": "Analysez vos performances, identifiez vos points faibles et mesurez votre évolution au fil du temps."
+        },
+        "detailedExplanations": {
+            "title": "Explications détaillées",
+            "description": "Apprenez de chaque question grâce à des explications claires qui facilitent la compréhension des concepts."
+        },
+        "questionBank": {
+            "title": "Banque de questions complète",
+            "description": "Entraînez-vous avec une vaste collection de questions médicales de qualité couvrant plusieurs spécialités."
+        }
+    }
+}

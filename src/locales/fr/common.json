@@ -1,0 +1,79 @@
+{
+  "appName": "MedQCM",
+  "home": "Accueil",
+  "about": "À propos",
+  "pricing": "Tarifs",
+  "dashboard": "Tableau de bord",
+  "subjects": "Matières",
+  "exams": "Examens",
+  "questions": "Questions",
+  "leaderboard": "Classement",
+  "profile": "Profil",
+  "settings": "Paramètres",
+
+  "login": "Connexion",
+  "register": "Inscription",
+  "logout": "Déconnexion",
+  "signin": "Se connecter",
+  "signup": "S'inscrire",
+
+  "email": "Email",
+  "password": "Mot de passe",
+  "confirmPassword": "Confirmer le mot de passe",
+
+  "start": "Commencer",
+  "continue": "Continuer",
+  "submit": "Valider",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "close": "Fermer",
+  "next": "Suivant",
+  "previous": "Précédent",
+  "finish": "Terminer",
+  "retry": "Réessayer",
+
+  "loading": "Chargement...",
+  "error": "Erreur",
+  "success": "Succès",
+  "failed": "Échec",
+
+  "search": "Rechercher",
+  "filter": "Filtrer",
+  "sort": "Trier",
+
+  "language": "Langue",
+  "theme": "Thème",
+  "dark": "Sombre",
+  "light": "Clair",
+
+  "welcome": "Bienvenue",
+  "hello": "Bonjour",
+  "goodbye": "Au revoir",
+
+  "question": "Question",
+  "answer": "Réponse",
+  "correct": "Correct",
+  "wrong": "Faux",
+
+  "score": "Score",
+  "result": "Résultat",
+  "progress": "Progression",
+  "time": "Temps",
+
+  "explanation": "Explication",
+  "review": "Révision",
+  "history": "Historique",
+
+  "free": "Gratuit",
+  "premium": "Premium",
+  "upgrade": "Améliorer",
+
+  "yes": "Oui",
+  "no": "Non",
+  "or": "ou",
+  "and": "et",
+
+  "empty": "Aucune donnée disponible",
+  "notFound": "Introuvable",
+  "welcomeBack": "Bon retour"
+}
