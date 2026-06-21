@@ -1,0 +1,37 @@
+{
+  "login": {
+    "title": "Bon retour",
+    "subtitle": "Connectez-vous pour continuer votre préparation aux examens médicaux",
+    "form": {
+      "email": {
+        "label": "Adresse e-mail",
+        "placeholder": "Entrez votre e-mail"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Entrez votre mot de passe"
+      }
+    },
+    "actions": {
+      "login": "Se connecter",
+      "loading": "Connexion en cours..."
+    },
+    "links": {
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signup": "Créer un compte"
+    },
+    "errors": {
+      "INVALID_CREDENTIALS": "E-mail ou mot de passe incorrect",
+      "EMAIL_REQUIRED": "L'e-mail est obligatoire",
+      "INVALID_EMAIL": "L'e-mail n'est pas valide",
+      "PASSWORD_REQUIRED": "Le mot de passe est obligatoire",
+      "INVALID_PASSWORD": "Le mot de passe ne respecte pas les critères de sécurité",
+      "ACCOUNT_LOCKED": "Votre compte a été bloqué en raison de plusieurs tentatives de connexion infructueuses. Veuillez réessayer plus tard.",
+      "SESSION_LIMIT": "Vous avez atteint le nombre maximum de sessions actives. Veuillez vous déconnecter d'autres appareils ou attendre avant de réessayer."
+    },
+    "security": {
+      "note": "Vos données sont chiffrées et sécurisées."
+    }
+  }
+}

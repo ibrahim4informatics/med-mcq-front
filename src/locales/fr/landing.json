@@ -26,6 +26,64 @@
         "questionBank": {
             "title": "Banque de questions complète",
             "description": "Entraînez-vous avec une vaste collection de questions médicales de qualité couvrant plusieurs spécialités."
+        },
+        "cta": {
+            "title": "En savoir plus"
+        }
+    },
+    "about": {
+        "title": "À propos de MedQCM",
+        "subtitle": "Aider les étudiants en médecine à mieux se préparer et à atteindre leurs objectifs académiques grâce à des outils modernes de préparation aux examens.",
+        "description": "MedQCM a été créé pour offrir aux étudiants en médecine une plateforme complète et accessible leur permettant de s'entraîner avec des QCM, de simuler des examens réels et de suivre leur progression. Notre mission est de rendre la préparation aux examens plus efficace, plus engageante et basée sur les données.",
+        "values": {
+            "quality": {
+                "title": "Contenu de qualité",
+                "description": "Les questions sont soigneusement organisées afin d'offrir un entraînement efficace et pertinent."
+            },
+            "accessibility": {
+                "title": "Apprentissage accessible",
+                "description": "Étudiez à tout moment, où que vous soyez et depuis n'importe quel appareil."
+            },
+            "performance": {
+                "title": "Axé sur la performance",
+                "description": "Suivez vos points forts, vos lacunes et votre progression grâce à des statistiques détaillées."
+            }
+        },
+        "cta": {
+            "title": "Prêt à améliorer vos résultats ?",
+            "button": "Découvrir les tarifs"
+        }
+    },
+    "pricing": {
+        "title": "Choisissez votre formule",
+        "subtitle": "Commencez gratuitement puis passez à Premium lorsque vous êtes prêt.",
+        "trial": {
+            "name": "Essai Gratuit",
+            "duration": "15 Jours",
+            "description": "Découvrez la plateforme et voyez comment MedQCM peut vous aider à réussir vos examens.",
+            "features": {
+                "f1": "Accès à une sélection de QCM",
+                "f2": "Entraînement par matière",
+                "f3": "Suivi de progression basique",
+                "f4": "Aucune carte bancaire requise"
+            },
+            "cta": "Commencer l'essai gratuit"
+        },
+        "premium": {
+            "badge": "Le plus populaire",
+            "name": "Premium",
+            "price": "2500 DA",
+            "period": "/année",
+            "description": "Débloquez l'expérience complète MedQCM.",
+            "features": {
+                "f1": "Accès illimité à tous les QCM",
+                "f2": "Simulations d'examens réalistes",
+                "f3": "Explications détaillées",
+                "f4": "Analyses avancées",
+                "f5": "Suivi des performances",
+                "f6": "Classements et compétitions"
+            },
+            "cta": "Passer à Premium"
         }
     }
 }

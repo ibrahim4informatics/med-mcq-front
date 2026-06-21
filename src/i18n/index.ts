@@ -9,6 +9,14 @@ import landingEn from "@/locales/en/landing.json";
 import landingFr from "@/locales/fr/landing.json";
 
 
+import loginEn from "@/locales/en/login.json";
+import loginFr from "@/locales/fr/login.json";
+
+
+import registerEn from "@/locales/en/register.json";
+import registerFr from "@/locales/fr/register.json";
+
+
 
 function normalizeLanguage(lang: string) {
     if (!lang) return "en";
@@ -36,11 +44,15 @@ i18n
                 common: commonEn,
 
                 landing: landingEn,
+                login: loginEn,
+                register: registerEn
             },
 
             fr: {
                 common: commonFr,
                 landing: landingFr,
+                login: loginFr,
+                register: registerFr
             },
         },
 

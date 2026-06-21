@@ -1,0 +1,48 @@
+{
+  "login": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to continue your medical exam preparation",
+
+    "form": {
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      }
+    },
+
+    "actions": {
+      "login": "Sign In",
+      "loading": "Signing in..."
+    },
+
+    "links": {
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signup": "Create account"
+    },
+
+    "errors": {
+      "INVALID_CREDENTIALS": "Invalid email or password",
+      "EMAIL_REQUIRED": "Email is required",
+      "INVALID_EMAIL": "Invalid email address",
+      "PASSWORD_REQUIRED": "Password is required",
+      "INVALID_PASSWORD": "Password does not meet security requirements",
+      "SERVER_ERROR": "Something went wrong. Please try again.",
+      "ACCOUNT_LOCKED": "Your account has been locked due to multiple failed login attempts. Please try again later.",
+      "SESSION_LIMIT": "You have reached the maximum number of active sessions. Please log out from other devices or wait before trying again."
+    },
+
+    "oauth": {
+      "or": "OR",
+      "google": "Continue with Google"
+    },
+
+    "security": {
+      "note": "Your data is securely encrypted and protected."
+    }
+  }
+}

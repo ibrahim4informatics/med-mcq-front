@@ -1,0 +1,81 @@
+{
+  "register": {
+    "title": "Créer un compte",
+    "subtitle": "Commencez dès aujourd'hui votre préparation aux examens médicaux",
+
+    "form": {
+      "first_name": {
+        "label": "Prénom",
+        "placeholder": "Entrez votre prénom"
+      },
+      "last_name": {
+        "label": "Nom",
+        "placeholder": "Entrez votre nom"
+      },
+      "email": {
+        "label": "Adresse e-mail",
+        "placeholder": "Entrez votre e-mail"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Créez un mot de passe"
+      },
+      "phone_number": {
+        "label": "Numéro de téléphone",
+        "placeholder": "Entrez votre numéro de téléphone"
+      }
+    },
+
+    "passwordRequirements": {
+      "title": "Exigences du mot de passe",
+      "minLength": "Au moins 8 caractères",
+      "uppercase": "Au moins une lettre majuscule",
+      "lowercase": "Au moins une lettre minuscule",
+      "number": "Au moins un chiffre",
+      "special": "Au moins un caractère spécial"
+    },
+
+    "terms": {
+      "prefix": "J'accepte les",
+      "termsOfService": "Conditions d'utilisation",
+      "and": "et la",
+      "privacyPolicy": "Politique de confidentialité"
+    },
+
+    "actions": {
+      "register": "Créer un compte",
+      "loading": "Création du compte..."
+    },
+
+    "links": {
+      "haveAccount": "Vous avez déjà un compte ?",
+      "login": "Se connecter"
+    },
+
+    "oauth": {
+      "or": "OU",
+      "google": "Continuer avec Google"
+    },
+
+    "success": {
+      "accountCreated": "Votre compte a été créé avec succès."
+    },
+
+    "errors": {
+      "REQUIRED_FIRST_NAME": "Le prénom est obligatoire",
+      "REQUIRED_LAST_NAME": "Le nom est obligatoire",
+      "REQUIRED_EMAIL": "L'e-mail est obligatoire",
+      "INVALID_EMAIL": "Veuillez saisir une adresse e-mail valide",
+      "REQUIRED_PASSWORD": "Le mot de passe est obligatoire",
+      "REQUIRED_CONFIRM_PASSWORD": "Veuillez confirmer votre mot de passe",
+      "INVALID_PASSWORD": "Le mot de passe ne respecte pas les critères de sécurité",
+      "PASSWORD_MISMATCH": "Les mots de passe ne correspondent pas",
+      "TERMS_REQUIRED": "Vous devez accepter les conditions d'utilisation",
+      "EMAIL_ALREADY_EXISTS": "Un compte avec cette adresse e-mail existe déjà",
+      "SERVER_ERROR": "Une erreur est survenue. Veuillez réessayer.",
+      "INVALID_PHONE_NUMBER": "Veuillez saisir un numéro de téléphone valide",
+      "REQUIRED_PHONE_NUMBER": "Le numéro de téléphone est obligatoire",
+      "PHONE_NUMBER_ALREADY_EXISTS": "Un compte avec ce numéro de téléphone existe déjà"
+    }
+  }
+}

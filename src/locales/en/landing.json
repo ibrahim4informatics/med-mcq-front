@@ -26,6 +26,64 @@
         "questionBank": {
             "title": "Extensive Question Bank",
             "description": "Practice with a large collection of high-quality medical questions covering multiple specialties."
+        },
+        "cta": {
+            "title": "Learn more"
+        }
+    },
+    "about": {
+        "title": "About MedQCM",
+        "subtitle": "Helping medical students prepare smarter and achieve their academic goals through modern exam preparation tools.",
+        "description": "MedQCM was created to provide medical students with a comprehensive and accessible platform for practicing multiple-choice questions, simulating real exams, and monitoring their progress. Our mission is to make exam preparation more effective, engaging, and data-driven.",
+        "values": {
+            "quality": {
+                "title": "High-Quality Content",
+                "description": "Questions are carefully organized to help students practice efficiently and confidently."
+            },
+            "accessibility": {
+                "title": "Accessible Learning",
+                "description": "Study anytime, anywhere, from any device with a seamless experience."
+            },
+            "performance": {
+                "title": "Performance Focused",
+                "description": "Track your strengths and weaknesses with detailed statistics and progress reports."
+            }
+        },
+        "cta": {
+            "title": "Ready to improve your results?",
+            "button": "Discover pricing"
+        }
+    },
+    "pricing": {
+        "title": "Choose Your Plan",
+        "subtitle": "Start for free and upgrade when you're ready.",
+        "trial": {
+            "name": "Free Trial",
+            "duration": "15 Days",
+            "description": "Explore the platform and experience how MedQCM can help you prepare for your exams.",
+            "features": {
+                "f1": "Access to selected MCQs",
+                "f2": "Practice by subject",
+                "f3": "Basic progress tracking",
+                "f4": "No credit card required"
+            },
+            "cta": "Start Free Trial"
+        },
+        "premium": {
+            "badge": "Most Popular",
+            "name": "Premium",
+            "price": "2500 DA",
+            "period": "/year",
+            "description": "Unlock the complete MedQCM experience.",
+            "features": {
+                "f1": "Unlimited access to all MCQs",
+                "f2": "Realistic exam simulations",
+                "f3": "Detailed explanations",
+                "f4": "Advanced analytics",
+                "f5": "Performance tracking",
+                "f6": "Leaderboards and rankings"
+            },
+            "cta": "Get Premium"
         }
     }
 }

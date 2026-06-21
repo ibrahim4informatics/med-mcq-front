@@ -18,11 +18,11 @@ export default () => {
         },
         {
             label: "about",
-            href: "/about"
+            href: "#about"
         },
         {
             label: "pricing",
-            href: "/pricing"
+            href: "#pricing"
         },
 
     ]
@@ -51,7 +51,11 @@ export default () => {
 
             >
 
-                {links.map((link) => (<NavLink key={link.href} to={link.href}>{t(link.label)}</NavLink>))}
+                {links.map((link) => ( <Button key={link.label} asChild variant={"ghost"} colorPalette={"green"} size={"sm"}>
+                    <a href={link.href} >
+                        {t(link.label)}
+                    </a>
+                </Button>))}
 
             </Box>
 

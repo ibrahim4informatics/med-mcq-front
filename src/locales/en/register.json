@@ -1,0 +1,81 @@
+{
+  "register": {
+    "title": "Create your account",
+    "subtitle": "Start your medical exam preparation journey today",
+
+    "form": {
+      "first_name": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "last_name": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Create a password"
+      },
+      "phone_number": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number"
+      }
+    },
+
+    "passwordRequirements": {
+      "title": "Password requirements",
+      "minLength": "At least 8 characters",
+      "uppercase": "At least one uppercase letter",
+      "lowercase": "At least one lowercase letter",
+      "number": "At least one number",
+      "special": "At least one special character"
+    },
+
+    "terms": {
+      "prefix": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    },
+
+    "actions": {
+      "register": "Create Account",
+      "loading": "Creating account..."
+    },
+
+    "links": {
+      "haveAccount": "Already have an account?",
+      "login": "Sign In"
+    },
+
+    "oauth": {
+      "or": "OR",
+      "google": "Continue with Google"
+    },
+
+    "success": {
+      "accountCreated": "Your account has been created successfully."
+    },
+
+    "errors": {
+      "REQUIRED_FIRST_NAME": "First name is required",
+      "REQUIRED_LAST_NAME": "Last name is required",
+      "REQUIRED_EMAIL": "Email is required",
+      "INVALID_EMAIL": "Please enter a valid email address",
+      "INVALID_PHONE_NUMBER": "Please enter a valid phone number",
+      "REQUIRED_PHONE_NUMBER": "Phone number is required",
+      "REQUIRED_PASSWORD": "Password is required",
+      "REQUIRED_CONFIRM_PASSWORD": "Please confirm your password",
+      "PASSWORD_MISMATCH": "Passwords do not match",
+      "TERMS_REQUIRED": "You must accept the terms and conditions",
+      "EMAIL_ALREADY_EXISTS": "An account with this email already exists",
+      "SERVER_ERROR": "Something went wrong. Please try again.",
+      "INVALID_PASSWORD": "Password does not meet security criteria",
+      "PHONE_NUMBER_ALREADY_EXISTS": "An account with this phone number already exists"
+    }
+  }
+}
