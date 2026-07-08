@@ -1,0 +1,14 @@
+{
+    "admin": {
+        "dashboard": "Tableau de bord",
+        "users": "Utilisateurs",
+        "faculties": "Facultés",
+        "modules": "Modules",
+        "questions": "Questions",
+        "reports": "Signalements",
+        "profile": "Profil",
+        "settings": "Paramètres",
+        "darkMode": "Mode sombre",
+        "logout": "Déconnexion"
+    }
+}

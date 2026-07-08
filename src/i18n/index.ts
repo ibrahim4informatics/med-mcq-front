@@ -16,6 +16,12 @@ import loginFr from "@/locales/fr/login.json";
 import registerEn from "@/locales/en/register.json";
 import registerFr from "@/locales/fr/register.json";
 
+import resetPasswordEn from "@/locales/en/forgot-password.json";
+import resetPasswordFr from "@/locales/fr/forgot-password.json";
+
+import sidebarEn from "@/locales/en/sidebar.json";
+import sidebarFr from "@/locales/fr/sidebar.json";
+
 
 
 function normalizeLanguage(lang: string) {
@@ -45,14 +51,18 @@ i18n
 
                 landing: landingEn,
                 login: loginEn,
-                register: registerEn
+                register: registerEn,
+                resetPassword: resetPasswordEn,
+                sidebar: sidebarEn,
             },
 
             fr: {
                 common: commonFr,
                 landing: landingFr,
                 login: loginFr,
-                register: registerFr
+                register: registerFr,
+                resetPassword: resetPasswordFr,
+                sidebar: sidebarFr,
             },
         },
 

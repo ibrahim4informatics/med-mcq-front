@@ -1,13 +1,14 @@
 import { Box, Button, Heading, Image } from "@chakra-ui/react"
 import { useTranslation } from "react-i18next"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { LanguageDropdown } from "./LanguageSwitcher";
 import { ColorModeButton } from "@/components/ui/color-mode";
 import logo from "@/assets/logo.png";
+import useAuthStatus from "@/hooks/queries/useAuthStatus";
 
 export default () => {
 
-
+    const { data } = useAuthStatus();
     const { t } = useTranslation();
 
 
@@ -29,10 +30,10 @@ export default () => {
 
 
     return (
-        <Box pos={"sticky"} top={0} left={0} zIndex={500} bg={{base:"white", _dark:"black"}} w={"100%"} py={4} px={2} display={"flex"} borderBottom={{
-            base:"1px solid rgba(0,0,0,.08)",
-            _dark:"1px solid rgba(252,252,252,.15)"
-            
+        <Box pos={"sticky"} top={0} left={0} zIndex={500} bg={{ base: "white", _dark: "black" }} w={"100%"} py={4} px={2} display={"flex"} borderBottom={{
+            base: "1px solid rgba(0,0,0,.08)",
+            _dark: "1px solid rgba(252,252,252,.15)"
+
         }}>
             {/* Logo */}
 
@@ -51,7 +52,7 @@ export default () => {
 
             >
 
-                {links.map((link) => ( <Button key={link.label} asChild variant={"ghost"} colorPalette={"green"} size={"sm"}>
+                {links.map((link) => (<Button key={link.label} asChild variant={"ghost"} colorPalette={"green"} size={"sm"}>
                     <a href={link.href} >
                         {t(link.label)}
                     </a>
@@ -61,21 +62,40 @@ export default () => {
 
             <Box display={"flex"} alignItems={"center"} gap={2} ms={"auto"}>
 
-                <Button asChild variant={"outline"} size={"sm"} colorPalette={"green"}>
-                    <Link to={"/login"} >
-                        {t("login")}
-                    </Link>
-                </Button>
+                {data && data === 200 ? (
+
+                    <Button asChild variant={"solid"} size={"sm"} colorPalette={"green"}>
+                        <Link to={"/dashboard"} >
+                            {t("dashboard")}
+                        </Link>
+                    </Button>
+
+                )
+                    : (
+
+                        <>
+                            <Button asChild variant={"outline"} size={"sm"} colorPalette={"green"}>
+                                <Link to={"/login"} >
+                                    {t("login")}
+                                </Link>
+                            </Button>
 
 
-                <Button asChild variant={"solid"} size={"sm"} colorPalette={"green"}>
-                    <Link to={"/register"} >
-                        {t("register")}
-                    </Link>
-                </Button>
+                            <Button asChild variant={"solid"} size={"sm"} colorPalette={"green"}>
+                                <Link to={"/register"} >
+                                    {t("register")}
+                                </Link>
+                            </Button>
+                        </>
+
+                    )
+
+                }
                 <LanguageDropdown />
                 <ColorModeButton />
-            </Box>
-        </Box>
+            </Box >
+        </Box >
     )
 }
+
+

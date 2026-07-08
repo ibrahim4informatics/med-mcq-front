@@ -41,3 +41,60 @@ export const checkAuthStatus = async () => {
         return error.response?.status || 500;
     }
 }
+
+
+export const sendOtpEmail = async (email: string) => {
+
+    try {
+        const response = await axios.post("/auth/reset-password", { email });
+        return response;
+    }
+    catch (err) {
+        return err.response;
+
+    }
+}
+
+
+export const verifyOtp = async (otp: string) => {
+    try {
+        const response = await axios.post("/auth/reset-password/verify", { otp });
+        return response;
+    }
+    catch (err) {
+        return err.response;
+    }
+}
+
+
+export const resetPassword = async (password: string) => {
+    try {
+        const response = await axios.patch("/auth/reset-password", { new_password: password });
+        return response;
+    }
+    catch (err) {
+        return err.response;
+    }
+}
+
+export const getUserRole = async () => {
+    try {
+        const response = await axios.get("/auth/role");
+        return response;
+    }
+
+    catch (err) {
+        return err.response;
+    }
+}
+
+
+export const logoutUser = async () => {
+    try {
+        const response = await axios.delete("/auth/logout");
+        return response;
+    }
+    catch (err) {
+        return err.response;
+    }
+}

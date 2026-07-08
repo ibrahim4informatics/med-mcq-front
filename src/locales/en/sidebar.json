@@ -1,0 +1,14 @@
+{
+    "admin": {
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "faculties": "Faculties",
+        "modules": "Modules",
+        "questions": "Questions",
+        "reports": "Reports",
+        "profile": "Profile",
+        "darkMode": "Dark Mode",
+        "settings": "Settings",
+        "logout": "Logout"
+    }
+}

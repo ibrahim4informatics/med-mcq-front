@@ -505,11 +505,8 @@ export const Advantages = () => {
 
 export default function Home() {
 
-    const { isAuthenticated } = useAuthContext();
     return (
         <GuestLayout>
-
-            <p>{JSON.stringify(isAuthenticated)}</p>
 
             <Hero />
             <Advantages />
