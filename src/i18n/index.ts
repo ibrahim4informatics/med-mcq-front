@@ -22,6 +22,9 @@ import resetPasswordFr from "@/locales/fr/forgot-password.json";
 import sidebarEn from "@/locales/en/sidebar.json";
 import sidebarFr from "@/locales/fr/sidebar.json";
 
+import dashboardEn from "@/locales/en/dashboard.json";
+import dashboardFr from "@/locales/fr/dashboard.json";
+
 
 
 function normalizeLanguage(lang: string) {
@@ -54,6 +57,7 @@ i18n
                 register: registerEn,
                 resetPassword: resetPasswordEn,
                 sidebar: sidebarEn,
+                dashboard:dashboardEn,
             },
 
             fr: {
@@ -63,6 +67,7 @@ i18n
                 register: registerFr,
                 resetPassword: resetPasswordFr,
                 sidebar: sidebarFr,
+                dashboard: dashboardFr,
             },
         },
 

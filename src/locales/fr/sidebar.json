@@ -7,8 +7,6 @@
         "questions": "Questions",
         "reports": "Signalements",
         "profile": "Profil",
-        "settings": "Paramètres",
-        "darkMode": "Mode sombre",
-        "logout": "Déconnexion"
+        "settings": "Paramètres"
     }
 }

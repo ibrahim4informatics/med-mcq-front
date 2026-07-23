@@ -7,8 +7,7 @@
         "questions": "Questions",
         "reports": "Reports",
         "profile": "Profile",
-        "darkMode": "Dark Mode",
-        "settings": "Settings",
-        "logout": "Logout"
+        "settings": "Settings"
+        
     }
 }

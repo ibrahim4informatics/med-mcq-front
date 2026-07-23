@@ -5,16 +5,16 @@ import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import useRole from "@/hooks/queries/useRole";
-import { href, Link, Navigate, useNavigate } from "react-router-dom";
+import {  Link, Navigate, useNavigate } from "react-router-dom";
 import { useQueryClient } from "@tanstack/react-query";
 import useLogout from "@/hooks/mutations/useLogout";
 import { useAuthContext } from "@/contexts/AuthContext";
+import { useTranslation } from "react-i18next";
 
 const AnimatedBox = motion(Box);
 
 
 const Sidebar = () => {
-
     const adminLinks = [
         { label: "dashboard", href: "/dashboard", icon: <LuLayoutDashboard /> },
         { label: "users", href: "/users", icon: <LuUsers /> },
@@ -25,19 +25,15 @@ const Sidebar = () => {
         { label: "profile", href: "/profile", icon: <LuUser /> },
         { label: "settings", href: "/settings", icon: <LuSettings /> },
     ]
-
     const queryCLient = useQueryClient();
     const { data: userRoleResponse, error: errorRole, isPending: loadingRole } = useRole();
-
     const { mutateAsync: logoutUser, isPending: loggingOut } = useLogout();
-
     const { setAccessToken, setIsAuthenticated } = useAuthContext();
     const naviagte = useNavigate();
-
-
     const [showMenu, setShowMenu] = useState(false);
-    const handleSignOut = async () => {
 
+    const {t} = useTranslation("sidebar");
+    const handleSignOut = async () => {
         if (loggingOut) return;
         try {
             await logoutUser();
@@ -46,23 +42,18 @@ const Sidebar = () => {
             setIsAuthenticated(false);
             naviagte("/login");
         }
-
         catch {
             return;
         }
     }
-
     if (errorRole) {
         return <Navigate to={"/login"} />
     }
-
     if (loadingRole) {
         return <Box w={"full"} h={"100dvh"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
             <Spinner size={"xl"} color={"green.500"} />
         </Box>
     }
-
-
     return (
         <Box w={{ base: "full", lg: 320 }} h={{ base: "auto", lg: "100%", }} bg={{ base: "white", _dark: "black" }} borderRight={{
             base: "none",
@@ -71,34 +62,23 @@ const Sidebar = () => {
         }} p={4}
 
         >
-
-
             {/* Desktop */}
-
             <Box w={"full"} h={"full"} display={{ base: "none", lg: "block" }}>
-
-
-
                 {/* Logo */}
                 <Box display={"flex"} alignItems={"center"} justifyContent={"center"} w={"full"} mb={6}>
                     <Image src={logo} alt="Logo" w={85} h={85} rounded={"full"} />
                 </Box>
-
                 {/* Links */}
-
                 <Box mt={16} h={"full"} display={"flex"} flexDirection={"column"} gap={4}>
-
                     {
                         userRoleResponse.data?.role === "ADMIN" && adminLinks.map((link) => (
                             <Button key={link.label} asChild variant={"ghost"} colorPalette={"green"} w={"full"}>
-
-                                <Box display={"flex"} alignItems={"center"} gap={2}>
-                                    {link.icon}
-                                    <Text>{link.label}</Text>
+                                <Box display={"flex"} alignItems={"center"} gap={2} asChild>
+                                    <Link to={link.href}>
+                                        {link.icon}
+                                        <Text>{t(`admin.${link.label}`)}</Text>
+                                    </Link>
                                 </Box>
-
-
-
                             </Button>
                         ))
                     }
@@ -124,7 +104,7 @@ const Sidebar = () => {
 
             <AnimatePresence>
                 {showMenu && (
-                    <AnimatedBox initial={{ x: "-100%" }} animate={{ x: 0 }} transition={{
+                    <AnimatedBox  initial={{ x: "-100%" }} animate={{ x: 0 }} transition={{
                         type: "keyframes"
                     }} exit={{ x: "-100%" }} display={{ base: "flex", lg: "none" }} bg={{ base: "white", _dark: "black" }} p={4} borderRight={{
                         base: "none",
@@ -136,6 +116,21 @@ const Sidebar = () => {
                         top={0} left={0} zIndex={20} w={"50%"} maxW={350} minW={300} h={"100dvh"} flexDirection={"column"} gap={4}
                     >
                         {/* Menu items go here */}
+
+                        <Box h={"full"} display={"flex"} flexDirection={"column"} gap={4} justifyContent={"center"} alignItems={"center"}>
+                            {
+                                userRoleResponse.data?.role === "ADMIN" && adminLinks.map((link) => (
+                                    <Button key={link.label} asChild variant={"ghost"} colorPalette={"green"} w={"full"}>
+                                        <Box display={"flex"} alignItems={"center"} gap={2} asChild>
+                                            <Link to={link.href}>
+                                                {link.icon}
+                                                <Text>{link.label}</Text>
+                                            </Link>
+                                        </Box>
+                                    </Button>
+                                ))
+                            }
+                        </Box>
                     </AnimatedBox>
                 )}
             </AnimatePresence>
@@ -150,9 +145,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
 
-        <Box w={"full"} h={"100dvh"} display={"flex"} flexDirection={{ base: "column", lg: "row" }}>
+        <Box w={"full"} h={"100dvh"} overflowY={"hidden"}  display={"flex"} flexDirection={{ base: "column", lg: "row" }}>
             <Sidebar />
-            <Box flex={1} bg={"blue"} overflowY={"auto"} w={"full"} p={6}>
+            <Box flex={1} bg={{ base: "white", _dark: "bg.subtle" }} overflowY={"auto"} h={"100%"} p={6}>
                 {children}
             </Box>
         </Box>
